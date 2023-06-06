@@ -1,0 +1,36 @@
+.producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 16px;
+  width: 25%;
+  gap: 16px;
+  height: fit-content;
+}
+.producto > * {
+  word-wrap: break-word;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.producto,
+.botones {
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.producto {
+  border-radius: 15px;
+}
+.botones {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 1120px) {
+  .producto {
+    width: 35%;
+    margin-bottom: 16px;
+  }
+}
